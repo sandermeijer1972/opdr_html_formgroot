@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+ <html>
+        <head>
+           <title>contactformulier</title>
+           <link rel="stylesheet" type="text/css" href="styles.css">
+        </head>
+        <body>
+            <header>
+                <h1>Het Contact Formulier</h1>
+            </header>
+            <main>                
+                <form class="formulier" name="contact" method="POST" data-netlify="true">
+                    <p>Voornaam:<br>
+                        <input type="text" name="voornaam">
+                    </p>
+                    <p>Achternaam:<br>
+                        <input type="text" name="achternaam">
+                    </p>
+                    <p>E-mailadres:<br>
+                        <input type="email" name="mailadres">
+                    </p>
+                    <p>Mobiel nummer:<br>
+                        <input type="tel" name="mobiel" value="06-">
+                    </p>
+                    <p>Leeftijd:<br>
+                        <input type="number" name="leeftijd" min="0" max="120"> jaar
+                    </p>
+                    <p>Geboortedatum:<br>
+                        <input type="date" name="geboortedatum" min="1900-02-06" max="2021-02-06">
+                    </p>
+                    <p><input type="radio" name="gender" value="man"> Man<br>
+                        <input type="radio" name="gender" value="vrouw"> Vrouw<br>
+                        <input type="radio" name="gender" value="anders"> Anders
+                    </p>
+                    <p>Favoriete Motor-configuratie:<br>
+                        <input type="checkbox" name="motor2" value="2-motorig"> 2-motorig<br>
+                        <input type="checkbox" name="motor3" value="3-motorig"> 3-motorig<br>
+                        <input type="checkbox" name="motor4" value="4-motorig"> 4-motorig
+                    </p>
+                    <p>Favoriete kleur:<br>
+                        <input type="color" name="kleur">
+                    </p>
+                    <p>Jouw mooie momenten als spotter:<br>
+                        <textarea name="commentaar"></textarea>
+                    </p>
+                    <p>Upload je laatste foto:<br>
+                        <input type="file" name="mijnfoto">
+                    </p>
+                    <p>URL van je website:<br>
+                        <input type="url" name="website" value="http://">
+                    </p>
+                    <p>
+                        <input type="submit" name="verzenden">
+                        <input type="reset" name="reset">
+                    </p>
+                </form>                
+                <section><a href="index.html"><button class="button">Klik hier voor de Startpagina</button></a>
+                </section>
+            </main>
+            <footer>
+                <div>® MadeBySM 2021</div>
+            </footer>
+        </body>
+ </html>
